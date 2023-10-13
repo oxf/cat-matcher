@@ -1,4 +1,4 @@
-package com.stanzolo.catusers;
+package com.stanzolo.caturequests;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -1,4 +1,4 @@
-package com.stanzolo.catusers.model;
+package com.stanzolo.caturequests.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

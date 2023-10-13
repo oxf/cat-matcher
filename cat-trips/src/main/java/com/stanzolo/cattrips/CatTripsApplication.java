@@ -8,10 +8,10 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 @EnableAutoConfiguration
 @EnableReactiveMongoRepositories
 @SpringBootApplication
-public class CatRequestsApplication {
+public class CatTripsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CatRequestsApplication.class, args);
+		SpringApplication.run(CatTripsApplication.class, args);
 	}
 
 }

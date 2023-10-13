@@ -1,8 +1,8 @@
-package com.stanzolo.catusers.service;
+package com.stanzolo.caturequests.service;
 
-import com.stanzolo.catusers.dto.CreateRequestDTO;
-import com.stanzolo.catusers.model.Request;
-import com.stanzolo.catusers.repository.RequestRepository;
+import com.stanzolo.caturequests.dto.CreateRequestDTO;
+import com.stanzolo.caturequests.model.Request;
+import com.stanzolo.caturequests.repository.RequestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

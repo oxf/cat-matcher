@@ -1,4 +1,4 @@
-package com.stanzolo.catusers.config;
+package com.stanzolo.caturequests.config;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

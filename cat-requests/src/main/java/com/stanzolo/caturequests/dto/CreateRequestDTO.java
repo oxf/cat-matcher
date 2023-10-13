@@ -1,4 +1,4 @@
-package com.stanzolo.catusers.dto;
+package com.stanzolo.caturequests.dto;
 
 import lombok.*;
 

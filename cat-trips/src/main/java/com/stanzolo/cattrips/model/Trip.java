@@ -1,4 +1,4 @@
-package com.stanzolo.catusers.model;
+package com.stanzolo.cattrips.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -15,22 +15,25 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Request implements Serializable {
+public class Trip implements Serializable {
 
     @JsonCreator
-    public Request(
+    public Trip(
             @JsonProperty("Id") UUID id,
             @JsonProperty("UserId") UUID userId,
+            @JsonProperty("DriverId") UUID driverId,
             @JsonProperty("From") String from,
             @JsonProperty("To") String to) {
         this.id = id;
         this.userId = userId;
+        this.driverId = driverId;
         this.from = from;
         this.to = to;
     }
     @Id
     private UUID id;
     private UUID userId;
+    private UUID driverId;
     private String from;
     private String to;
 }

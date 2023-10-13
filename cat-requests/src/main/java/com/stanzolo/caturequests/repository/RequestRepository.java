@@ -1,6 +1,6 @@
-package com.stanzolo.catusers.repository;
+package com.stanzolo.caturequests.repository;
 
-import com.stanzolo.catusers.model.Request;
+import com.stanzolo.caturequests.model.Request;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

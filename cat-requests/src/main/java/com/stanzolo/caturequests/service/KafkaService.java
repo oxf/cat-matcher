@@ -1,4 +1,4 @@
-package com.stanzolo.catusers.service;
+package com.stanzolo.caturequests.service;
 
 public class KafkaService implements QueueService {
 

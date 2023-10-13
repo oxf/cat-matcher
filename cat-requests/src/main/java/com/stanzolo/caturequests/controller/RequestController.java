@@ -1,8 +1,8 @@
-package com.stanzolo.catusers.controller;
+package com.stanzolo.caturequests.controller;
 
-import com.stanzolo.catusers.dto.CreateRequestDTO;
-import com.stanzolo.catusers.model.Request;
-import com.stanzolo.catusers.service.RequestService;
+import com.stanzolo.caturequests.model.Request;
+import com.stanzolo.caturequests.service.RequestService;
+import com.stanzolo.caturequests.dto.CreateRequestDTO;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
