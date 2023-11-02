@@ -1,0 +1,38 @@
+version: '3'
+services:
+  cat-users:
+    image: cat-users
+    ports:
+      - "8080:8080"
+
+  cat-requests:
+    image: cat-requests
+    ports:
+      - "8081:8080"
+
+  cat-trips:
+    image: cat-trips
+    ports:
+      - "8082:8080"
+
+  kafka:
+    image: 'bitnami/kafka:latest'
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    ports:
+      - "2181:2181"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=mydb
