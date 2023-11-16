@@ -37,4 +37,11 @@ public class RequestController {
     public Mono<Request> createRequest(@RequestBody CreateRequestDTO requestDTO) {
         return requestService.createRequest(requestDTO);
     }
+
+    @GetMapping("/test")
+    @ResponseStatus(HttpStatus.OK)
+    public void test() {
+        requestService.simulateRequests();
+    }
+
 }

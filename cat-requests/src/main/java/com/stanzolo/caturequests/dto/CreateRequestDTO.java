@@ -6,6 +6,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class CreateRequestDTO {
     private UUID userId;
     private String from;
